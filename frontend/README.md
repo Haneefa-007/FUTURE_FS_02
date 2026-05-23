@@ -1,16 +1,116 @@
-# React + Vite
+# MINI-CRM
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Client Lead Management CRM built using React, Node.js, Express, and lowdb.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* User authentication
+* Dashboard overview
+* Add and manage client leads
+* Lead status tracking
+* Notes management
+* Responsive frontend UI
+* REST API backend
+* File-based database using lowdb
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
 
-## Expanding the ESLint configuration
+* React.js
+* Vite
+* CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* lowdb (JSON file storage)
+
+---
+
+## Project Structure
+
+```text id="u18pm7"
+MINI-CRM/
+├── backend/
+├── frontend/
+├── README.md
+└── .gitignore
+```
+
+---
+
+## Installation
+
+### 1. Clone Repository
+
+```bash id="u3n9rx"
+git clone https://github.com/YOUR_USERNAME/MINI-CRM.git
+cd MINI-CRM
+```
+
+---
+
+## Backend Setup
+
+```bash id="s4p39l"
+cd backend
+npm install
+npm run dev
+```
+
+Backend runs on:
+
+```text id="4l9q7q"
+http://localhost:5000
+```
+
+---
+
+## Frontend Setup
+
+Open another terminal:
+
+```bash id="3pfcmh"
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs on:
+
+```text id="4g5k4v"
+http://localhost:5173
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file inside backend:
+
+```env id="i91glx"
+PORT=5000
+JWT_SECRET=your_secret_key
+```
+
+---
+
+## Future Improvements
+
+* MongoDB/MySQL integration
+* Email notifications
+* Role-based authentication
+* Analytics dashboard
+* Cloud deployment
+
+---
+
+## Author
+
+Built by Haneefa🚀
+
